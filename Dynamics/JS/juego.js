@@ -88,5 +88,21 @@ document.addEventListener('DOMContentLoaded', function()
     });
 
     // Contador
-    
+    let texto_contador = document.getElementById('contador-entrada');
+    let eject_bot_cont = document.getElementById('contador-ejecutar');
+    let resultado_contador = document.getElementById('result-contador');
+
+    eject_bot_cont.addEventListener("click", ()=>
+    {
+        let texto = texto_contador.value;
+        
+        resultado_contador.innerHTML = "Caracteres (con espacios): " + texto.length + "<br>";
+        resultado_contador.innerHTML += "Caracteres (sin espacios): " + texto.replace(" ", "").length + "<br>";
+        resultado_contador.innerHTML += "Palabras: " + texto.split(" ").length;
+    })
 });
+
+/***
+ * 
+ * 
+ */

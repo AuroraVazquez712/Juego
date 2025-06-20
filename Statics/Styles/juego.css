@@ -39,7 +39,16 @@ body
     display: flex;
     flex-direction:column;
 }
-
+.Contador
+{
+    margin-bottom:30px; 
+    padding:20px;
+    border: 1px solid #1f10ad;
+    background-color: #9bafd4;
+    border-radius:8px; 
+    display: flex;
+    flex-direction:column;
+}
 h2 
 {
     
