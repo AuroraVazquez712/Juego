@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function()
 
     
     const busq=document.querySelector(".Buscador");       
-    const acro=document.querySelector(".AcronimoGenerator"); 
+    const acro=document.querySelector(".Acronimo"); 
     const cont=document.querySelector(".Contador");       
 
     busq.style.display ="none";
