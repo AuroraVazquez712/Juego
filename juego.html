@@ -3,23 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="./Statics/Styles/juego.css">
+    <title>Juego Interactivo</title> </head>
 <body>
-    <div class="contenedor">
-        <h2>Buscador de palabras dentro de una cadena</h2>
-        <label for="texto-input">Texto a analizar:</label>
-        <input type="text" id="texto-input" placeholder='Ejemplo: "Hola mundo"'>
-        <label for="busca-input">texto a buscar:</label>
-        <input type="text" id="busca-input" placeholder='Ejemplo: "Hola"'>
-        
-        <button id="buscar-btn">Ejecutar</button>
-        
-        <div class="result-pantalla" id="result-pantalla">
-            Busqueda realizada: 
+    <div class="botones">
+        <div class="ContadorBtn">
+            <button class="btn" id="contadorBtn">Contador</button>
         </div>
-        
+
+        <div class="AcronimoBtn">
+            <button class="btn" id="acronimoBtn">Acrónimo</button>
+        </div>
+
+        <div class="BuscadorBtn">
+            <button class="btn" id="buscadorBtn">Buscador</button>
+        </div>
     </div>
+
+    <div class="Juegos">
+        <div class="Buscador" id="seccionBuscador"> 
+            <h2>Buscador de palabras dentro de una cadena</h2>
+            <label for="texto-input">Texto a analizar:</label>
+            <input type="text" id="texto-input" placeholder='Ejemplo: "Hola mundo"'>
+            <label for="busca-input">texto a buscar:</label>
+            <input type="text" id="busca-input" placeholder='Ejemplo: "Hola"'>
+            <button id="buscar-btn">Ejecutar</button>
+            <div class="result-pantalla" id="result-pantalla-buscador"> Búsqueda realizada: <span id="resultadoBuscadorSpan"></span> </div>
+        </div>
+
+        <div class="Acronimo" id="seccionAcronimo"> 
+            <h2>Generador de Acrónimos</h2>
+            <label for="texto">Texto a analizar:</label>
+            <input type="text" id="texto-acronimo" placeholder='Ejemplo: "Hola mundo"'> 
+            <button id="generar-acronimo-btn">Generar Acrónimo</button> 
+            <div class="result-pantalla" id="result-pantalla-acronimo"> Acrónimo generado: 
+                <span id="resultadoAcronimoSpan"></span> 
+            </div>
+        </div>
+
+        <div class="Contador" id="seccionContador">
+             <h2>Contador </h2>
+            
+
+        </div>
+    </div>
+
     <script src="./Dynamics/JS/juego.js"></script>
 </body>
 </html>
