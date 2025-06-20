@@ -1,0 +1,108 @@
+body 
+{
+    display:flex;
+    font-family: sans-serif;
+    height:100vh; 
+}
+
+.botones 
+{
+    display:flex;
+    flex-direction: column; 
+    padding:20px;
+    background-color: #f0f0f0; 
+    width:200px ; 
+    box-sizing:border-box; 
+    align-items: center; 
+}
+
+
+.Buscador 
+{
+    margin-bottom:30px; 
+    padding:20px;
+    border: 1px solid #1f10ad;
+    background-color: #9bafd4;
+    border-radius:8px; 
+    display: flex;
+    flex-direction:column;
+
+}
+
+.Acronimo
+{
+    margin-bottom:30px; 
+    padding:20px;
+    border: 1px solid #1f10ad;
+    background-color: #9bafd4;
+    border-radius:8px; 
+    display: flex;
+    flex-direction:column;
+}
+
+h2 
+{
+    
+    font-size:40px;
+    color: #09010f;
+    margin-bottom:20px;
+    align-self: center; 
+}
+
+label 
+{
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight: bold;
+    color: #040725;
+}
+
+
+
+
+
+.result-pantalla 
+{
+    margin-top:20px;
+    padding:15px;
+    border: 1px dashed #63657e;
+    background-color:#e9e9e9;
+    text-align:left;
+    min-height:50px; 
+    box-sizing: border-box;
+    align-self:center ; 
+}
+
+
+.btn 
+{ 
+    background-color:#007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius:5px;
+    cursor: pointer;
+    font-size:16px;
+    text-align: center;
+    width:150px; 
+    margin-bottom:10px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.btn:hover 
+{
+    background-color:#0c1749;
+}
+
+
+.Juegos
+{
+    flex-grow: 1; 
+    padding:20px;
+    background-color:#bbc5f1; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
