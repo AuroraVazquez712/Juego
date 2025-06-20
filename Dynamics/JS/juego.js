@@ -13,15 +13,17 @@ eject_bot.addEventListener('click',function(){
     let i=0;
     let separa=texto_min.split(buscar_min);
     let cont=separa.length-1;
+    let coincidencias =[];
     
     while(i< texto_min.length && i!=-1)
     {
         i=texto_min.indexOf(buscar_min,i);
         if(i!=-1){
             resul_pant.innerHTML += i + ",";
+            coincidencias.push(texto.substring(i, i + buscar.length));
             i++;
         }
     }
-
+    resul_pant.innerHTML += `Palabras encontradas: ${coincidencias.join(", ")}`;
     resul_pant.innerHTML += "Total de coincidencias: " + cont;
 });
