@@ -10,7 +10,8 @@ eject_bot.addEventListener('click',function(){
     let buscar = busca_inp.value;
     let i=0;
     let separa=texto.split(buscar);
-    let cont=separa.size-1;
+    let cont=separa.length-1;
+    
     while(i< texto.length && i!=-1)
     {
         i=texto.indexOf(buscar,i);
@@ -20,5 +21,5 @@ eject_bot.addEventListener('click',function(){
         }
     }
 
-    
+    resul_pant.innerHTML += "Total de coincidencias: " + cont;
 });
